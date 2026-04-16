@@ -1,0 +1,20 @@
+{
+  "name": "faultsense-instrumentation",
+  "description": "Instrument web apps with Faultsense production assertion monitoring. Adds declarative fs-* HTML attributes that turn E2E assertions into real-user production checks.",
+  "version": "0.5.4",
+  "author": {
+    "name": "Faultsense",
+    "email": "hello@faultsense.com"
+  },
+  "homepage": "https://faultsense.com",
+  "repository": "https://github.com/Faultsense/faultsense-claude-plugin",
+  "license": "FSL-1.1-ALv2",
+  "keywords": [
+    "monitoring",
+    "assertions",
+    "production",
+    "feature-health",
+    "e2e",
+    "faultsense"
+  ]
+}
