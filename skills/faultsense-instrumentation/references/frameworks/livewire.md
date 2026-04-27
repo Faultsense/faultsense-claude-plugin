@@ -33,7 +33,7 @@ Load the agent in your layout (`resources/views/layouts/app.blade.php`):
 
 ## Morph swaps — use `updated`
 
-Livewire uses morphdom for all DOM updates. Elements preserve identity across re-renders — attributes and children mutate in place. This is [PAT-04 morphdom preserved-identity](../mutation-patterns.md#pat-04-morphdom-preserved-identity).
+Livewire uses morphdom for all DOM updates. Elements preserve identity across re-renders — attributes and children mutate in place. This is PAT-04 morphdom preserved-identity.
 
 **The canonical assertion type for Livewire mutations is [`fs-assert-updated`](../assertions/updated.md)**, not `added`. An item is not "added" — it's an in-place patch that makes the existing element look different.
 
@@ -94,11 +94,11 @@ Blade's expression syntax works the same as ERB/EJS for computing the expected n
 
 - **Use `updated`, not `added`, for item mutations.** Livewire morphs — identity is preserved. `fs-assert-added=".todo-item"` will never match on a state toggle.
 - **`wire:key` matters.** Livewire uses `wire:key` to match elements during morph. Without stable keys on list items, morphdom may reorder and surprise your assertions. Always set `wire:key="{{ $todo->id }}"` on list items.
-- **Full component re-renders** can produce large mutation batches. The agent's [PAT-07 microtask batching](../mutation-patterns.md#pat-07-microtask-batching) handles this — every record is fanned out through the resolver.
+- **Full component re-renders** can produce large mutation batches. The agent's PAT-07 microtask batching handles this — every record is fanned out through the resolver.
 - **Alpine inside Livewire.** Livewire ships with Alpine. Use Alpine's CSP build for strict-CSP production environments.
 
 ## See also
 
 - [Frameworks index](../frameworks.md)
-- [Mutation pattern PAT-04](../mutation-patterns.md#pat-04-morphdom-preserved-identity)
+- Mutation pattern PAT-04
 - [Alpine notes](alpine.md)

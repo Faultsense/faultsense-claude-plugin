@@ -56,5 +56,4 @@ Fires once when the element is inserted into the DOM. Use for page-load checks, 
 
 - [`unmount`](unmount.md) — the complementary trigger
 - [`invariant`](invariant.md) — perpetual alternative
-- [Mutation pattern PAT-09](../mutation-patterns.md#pat-09-hydration-upgrade) — hydration identity
 - [Triggers index](../triggers.md)

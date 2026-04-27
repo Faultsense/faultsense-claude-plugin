@@ -37,7 +37,7 @@ Use `phx:page-loading-stop` to initialize — it fires after LiveView has settle
 
 LiveView's client morphs incoming diffs into the DOM, preserving element identity where possible. The canonical assertion type is [`fs-assert-updated`](../assertions/updated.md) — elements are patched in place, not added.
 
-This is the same shape as Livewire ([PAT-04 morphdom preserved-identity](../mutation-patterns.md#pat-04-morphdom-preserved-identity)).
+This is the same shape as Livewire (PAT-04 morphdom preserved-identity).
 
 ```heex
 <button
@@ -115,5 +115,5 @@ Live navigation updates the URL and LiveView state without a full page load. The
 ## See also
 
 - [Frameworks index](../frameworks.md)
-- [Mutation pattern PAT-04](../mutation-patterns.md#pat-04-morphdom-preserved-identity)
+- Mutation pattern PAT-04
 - [Livewire notes](livewire.md) — similar patterns apply

@@ -1,6 +1,6 @@
 {
   "name": "@faultsense/skill-instrumentation",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "Claude Code / agentskills.io skill that teaches AI coding agents how to instrument web apps with Faultsense production assertion monitoring.",
   "private": true,
   "license": "FSL-1.1-ALv2",

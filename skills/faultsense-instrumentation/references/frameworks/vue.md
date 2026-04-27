@@ -91,7 +91,7 @@ When Vue re-renders on prop changes, the attribute value is recomputed — the a
 
 ## SSR (Nuxt, Vue SSR)
 
-SSR-rendered elements are hydrated, not re-mounted. [`fs-trigger="mount"`](../triggers/mount.md) doesn't re-fire on hydration. Use [`fs-trigger="invariant"`](../triggers/invariant.md) for "should be true across hydration" contracts. See [PAT-09 hydration upgrade](../mutation-patterns.md#pat-09-hydration-upgrade).
+SSR-rendered elements are hydrated, not re-mounted. [`fs-trigger="mount"`](../triggers/mount.md) doesn't re-fire on hydration. Use [`fs-trigger="invariant"`](../triggers/invariant.md) for "should be true across hydration" contracts. See PAT-09 hydration upgrade.
 
 ## Gotchas
 

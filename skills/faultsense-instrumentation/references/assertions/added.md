@@ -46,8 +46,6 @@ Passes when a new `.todo-item` element is inserted into the DOM after the click.
 
 If a matching element is already in the DOM at the moment the trigger fires, `added` does **not** pass on that. It waits for an actual insertion event. This is intentional — a pre-existing match isn't "added by this trigger" and reporting it as a pass would mask real failures.
 
-See [mutation pattern PAT-01](../mutation-patterns.md#pat-01-pre-existing-target) for the regression lock that guarantees this behavior.
-
 ## Pairs well with
 
 - [`fs-trigger="click"`](../triggers/click.md) — canonical user interaction
@@ -69,5 +67,4 @@ See [mutation pattern PAT-01](../mutation-patterns.md#pat-01-pre-existing-target
 
 - [`updated`](updated.md) — for in-place content changes
 - [`removed`](removed.md) — the complementary type
-- [Mutation pattern catalog](../mutation-patterns.md) — how the agent handles DOM shapes
 - [Assertions index](../assertions.md)

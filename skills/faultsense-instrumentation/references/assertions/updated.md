@@ -45,7 +45,7 @@ Passes when `#counter`'s text changes to match the regex after the click.
 
 ## Mutation record shape
 
-`updated` resolves from mutation records whose `target` matches the selector — either `attributes` / `characterData` records directly on the element, or `childList` records where the element is the parent. The resolver walks text-node mutations up to their parent element via `parentElement`, so a text-only change satisfies `updated` with [`text-matches`](../modifiers/text-matches.md) without having to target the text node directly (see [PAT-06](../mutation-patterns.md#pat-06-text-only-mutation)).
+`updated` resolves from mutation records whose `target` matches the selector — either `attributes` / `characterData` records directly on the element, or `childList` records where the element is the parent. The resolver walks text-node mutations up to their parent element via `parentElement`, so a text-only change satisfies `updated` with [`text-matches`](../modifiers/text-matches.md) without having to target the text node directly.
 
 ## Pairs well with
 
@@ -66,5 +66,4 @@ Passes when `#counter`'s text changes to match the regex after the click.
 
 - [`added`](added.md) — for new elements
 - [`stable`](stable.md) — the temporal inverse (passes when NOT updated)
-- [Mutation pattern PAT-04](../mutation-patterns.md#pat-04-morphdom-preserved-identity) — morphdom in-place patches
 - [Assertions index](../assertions.md)

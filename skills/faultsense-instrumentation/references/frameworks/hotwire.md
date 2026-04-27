@@ -85,7 +85,7 @@ Triggering element:
 
 ## Turbo 8 morphing (`refresh="morph"`)
 
-Turbo 8 introduced page-morph refreshes via idiomorph. The full page re-renders on the server and the client patches the DOM in place — identity is preserved. Under a morph refresh, use [`fs-assert-updated`](../assertions/updated.md), not `added`. See [PAT-04 morphdom preserved-identity](../mutation-patterns.md#pat-04-morphdom-preserved-identity).
+Turbo 8 introduced page-morph refreshes via idiomorph. The full page re-renders on the server and the client patches the DOM in place — identity is preserved. Under a morph refresh, use [`fs-assert-updated`](../assertions/updated.md), not `added`. See PAT-04 morphdom preserved-identity.
 
 ## Stimulus controllers
 
@@ -127,5 +127,5 @@ The expected-next-state pattern works naturally with ERB:
 ## See also
 
 - [Frameworks index](../frameworks.md)
-- [Mutation pattern PAT-04 morphdom preserved-identity](../mutation-patterns.md#pat-04-morphdom-preserved-identity)
+- Mutation pattern PAT-04 morphdom preserved-identity
 - [HTMX notes](htmx.md) — many of the same patterns apply

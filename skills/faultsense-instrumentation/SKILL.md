@@ -5,7 +5,7 @@ license: FSL-1.1-ALv2
 compatibility: Designed for Claude Code and other Agent Skills-compatible products (Cursor, OpenCode, Goose, Gemini CLI, etc.). Instruments code that renders HTML to the browser DOM — skip for backend-only projects.
 metadata:
   author: Faultsense
-  version: "0.5.4"
+  version: "0.5.5"
   homepage: https://faultsense.com
   repository: https://github.com/Faultsense/faultsense-claude-plugin
 ---

@@ -1,7 +1,7 @@
 {
   "name": "faultsense-instrumentation",
   "description": "Instrument web apps with Faultsense production assertion monitoring. Adds declarative fs-* HTML attributes that turn E2E assertions into real-user production checks.",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "author": {
     "name": "Faultsense",
     "email": "hello@faultsense.com"

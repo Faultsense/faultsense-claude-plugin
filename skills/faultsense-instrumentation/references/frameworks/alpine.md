@@ -79,11 +79,11 @@ With the CSP build, Alpine expressions are pre-compiled via a register function 
 ## Gotchas
 
 - **CSP build is required for strict CSP environments.** The default Alpine build uses `eval`. See above.
-- **Transitions (`x-transition`)** produce mutation records as classes toggle. The agent's wait-for-pass resolver handles the intermediate states (see [PAT-02 delayed-commit mutation](../mutation-patterns.md#pat-02-delayed-commit-mutation)) so you don't need to special-case transition classes.
+- **Transitions (`x-transition`)** produce mutation records as classes toggle. The agent's wait-for-pass resolver handles the intermediate states (see PAT-02 delayed-commit mutation) so you don't need to special-case transition classes.
 - **`x-show="false"`** hides via `display: none`, so [`fs-assert-hidden`](../assertions/hidden.md) is the correct type. `x-if="false"` removes the element — use [`fs-assert-removed`](../assertions/removed.md).
 
 ## See also
 
 - [Frameworks index](../frameworks.md)
-- [Mutation pattern PAT-02](../mutation-patterns.md#pat-02-delayed-commit-mutation) — how transitions are handled
+- Mutation pattern PAT-02 — how transitions are handled
 - [Patterns cookbook](../patterns.md)

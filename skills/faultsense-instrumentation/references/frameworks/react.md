@@ -126,13 +126,13 @@ If your component wraps the root element or filters props, make sure `fs-*` prop
 
 ## StrictMode and double-mount
 
-React 18 `StrictMode` double-mounts components in development (insert → unmount → insert). The agent handles this naturally via its [PAT-05 detach-reattach](../mutation-patterns.md#pat-05-detach-reattach) resolution — `added` assertions pass on the final insert, not the intermediate states.
+React 18 `StrictMode` double-mounts components in development (insert → unmount → insert). The agent handles this naturally via its PAT-05 detach-reattach resolution — `added` assertions pass on the final insert, not the intermediate states.
 
 ## SSR and hydration
 
 An SSR-rendered element that the client hydrates is **not** re-mounted. Its attributes change, but DOM identity is preserved. [`fs-trigger="mount"`](../triggers/mount.md) does NOT re-fire on hydration. Use [`fs-trigger="invariant"`](../triggers/invariant.md) for "should be true across hydration" contracts, or [`fs-assert-updated`](../assertions/updated.md) if you want to catch the exact hydration moment.
 
-See [PAT-09 hydration upgrade](../mutation-patterns.md#pat-09-hydration-upgrade) for the regression lock.
+See PAT-09 hydration upgrade for the regression lock.
 
 ## Gotchas
 

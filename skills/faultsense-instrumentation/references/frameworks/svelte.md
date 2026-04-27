@@ -96,13 +96,13 @@ reaches the native button.
 
 SvelteKit SSRs routes and hydrates them client-side. [`fs-trigger="mount"`](../triggers/mount.md) doesn't re-fire on hydration — identity is preserved. Use [`fs-trigger="invariant"`](../triggers/invariant.md) for hydration-spanning contracts or [`fs-assert-updated`](../assertions/updated.md) if you want to catch the hydration moment specifically.
 
-See [PAT-09 hydration upgrade](../mutation-patterns.md#pat-09-hydration-upgrade).
+See PAT-09 hydration upgrade.
 
 ## Gotchas
 
 - **`$$restProps` is required for pass-through components.** Svelte doesn't spread unknown props by default.
 - **`bind:` directives create two-way binding.** The `fs-assert-updated` on a bound checkbox runs on the `change` event, not on every Svelte reactivity tick — which is what you want.
-- **Stores triggering mass updates** can fire many mutations in one microtask. The agent's [PAT-07 microtask batching](../mutation-patterns.md#pat-07-microtask-batching) handles this.
+- **Stores triggering mass updates** can fire many mutations in one microtask. The agent's PAT-07 microtask batching handles this.
 
 ## See also
 

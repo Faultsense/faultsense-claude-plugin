@@ -56,7 +56,7 @@ Dynamic attributes use expressions. Solid's fine-grained reactivity re-evaluates
 
 ## Signals and reactivity
 
-Solid's signals produce fine-grained DOM updates — often a single `characterData` or `attributes` mutation with no ancestor changes. The agent handles this via [PAT-06 text-only mutation](../mutation-patterns.md#pat-06-text-only-mutation), which promotes characterData record targets to their `parentElement` so [`text-matches`](../modifiers/text-matches.md) modifiers work without targeting text nodes directly.
+Solid's signals produce fine-grained DOM updates — often a single `characterData` or `attributes` mutation with no ancestor changes. The agent handles this via PAT-06 text-only mutation, which promotes characterData record targets to their `parentElement` so [`text-matches`](../modifiers/text-matches.md) modifiers work without targeting text nodes directly.
 
 ```jsx
 const [count, setCount] = createSignal(0);
@@ -94,4 +94,4 @@ Compute the expected next state in the expression:
 
 - [Frameworks index](../frameworks.md)
 - [Dynamic assertion values](../patterns.md#dynamic-assertion-values)
-- [Mutation pattern PAT-06](../mutation-patterns.md#pat-06-text-only-mutation) — how the agent handles fine-grained text mutations
+- Mutation pattern PAT-06 — how the agent handles fine-grained text mutations

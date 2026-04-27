@@ -274,7 +274,7 @@ The same rule applies to event listeners that need to survive boost: delegate fr
 ## See also
 
 - [Frameworks index](../frameworks.md)
-- [Mutation pattern PAT-03 outerHTML replacement](../mutation-patterns.md#pat-03-outerhtml-replacement)
-- [Mutation pattern PAT-04 morphdom preserved-identity](../mutation-patterns.md#pat-04-morphdom-preserved-identity)
+- Mutation pattern PAT-03 outerHTML replacement
+- Mutation pattern PAT-04 morphdom preserved-identity
 - [`fs-assert-oob`](../assertions/oob.md)
 - [`fs-assert-mpa`](../assertions/mpa.md)

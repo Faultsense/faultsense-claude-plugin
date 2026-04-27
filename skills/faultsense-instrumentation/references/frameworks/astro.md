@@ -66,7 +66,7 @@ MPA mode is the right choice here — Astro's default behavior for forms is a fu
 
 Islands are components that hydrate client-side via `client:load`, `client:idle`, `client:visible`, or `client:only`. Each island is a standalone React / Vue / Svelte / Solid / Preact component.
 
-**During hydration, the island's root element's identity is preserved.** The server-rendered HTML is the starting state; the client framework takes over and patches attributes / children as state changes. [`fs-trigger="mount"`](../triggers/mount.md) does NOT re-fire on hydration — the element is already in the DOM. See [PAT-09 hydration upgrade](../mutation-patterns.md#pat-09-hydration-upgrade).
+**During hydration, the island's root element's identity is preserved.** The server-rendered HTML is the starting state; the client framework takes over and patches attributes / children as state changes. [`fs-trigger="mount"`](../triggers/mount.md) does NOT re-fire on hydration — the element is already in the DOM.
 
 For "assert something is true once hydrated," use [`fs-trigger="invariant"`](../triggers/invariant.md) or [`fs-assert-updated`](../assertions/updated.md) depending on whether you want continuous monitoring or a one-shot check at the hydration moment.
 
@@ -101,7 +101,7 @@ Astro lets you mix React, Vue, Svelte, Solid, and Preact islands in the same sit
 ## See also
 
 - [Frameworks index](../frameworks.md)
-- [Mutation pattern PAT-09 hydration upgrade](../mutation-patterns.md#pat-09-hydration-upgrade)
+- Mutation pattern PAT-09 hydration upgrade
 - [React notes](react.md) — React islands
 - [Vue notes](vue.md) — Vue islands
 - [Svelte notes](svelte.md) — Svelte islands
